@@ -14,7 +14,7 @@ export const increment = count => {
   console.log('Increment Action Creator: ', count)
   return {
     type: INCREMENT,
-    payload: (count += 1)
+    payload: count
   }
 };
 
@@ -23,6 +23,6 @@ export const decrement = count => {
   console.log('Decrement Action Creator: ', count)
   return {
     type: DECREMENT,
-    payload: (count -= 1)
+    payload: count
   }
 };
